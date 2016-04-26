@@ -13,7 +13,7 @@
 
 'use strict';
 
-(function() {
+/*(function() {
     var childProcess = require("child_process");
     var oldSpawn = childProcess.spawn;
     function mySpawn() {
@@ -23,7 +23,8 @@
         return result;
     }
     childProcess.spawn = mySpawn;
-})();
+})();*/
+
 
 var config = require('./config');
 var utils = require('../../test/utils');

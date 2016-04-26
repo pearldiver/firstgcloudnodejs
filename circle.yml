@@ -1,0 +1,6 @@
+general:
+  build_dir: 1-hello-world
+
+test:
+  override:
+    - mocha 1-hello-world/test/index.js -t 30000
