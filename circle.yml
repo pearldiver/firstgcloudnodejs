@@ -3,4 +3,4 @@ general:
 
 test:
   override:
-    - mocha 1-hello-world/test/index.js -t 30000
+    - mocha test/index.js -t 30000
