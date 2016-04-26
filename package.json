@@ -54,7 +54,8 @@
     "nconf": "^0.8.4",
     "prompt": "^1.0.0",
     "request": "^2.70.0",
-    "winston": "^2.2.0"
+    "winston": "^2.2.0",
+    "spawn-cmd": "*"
   },
   "devDependencies": {
     "codecov": "^1.0.1",
