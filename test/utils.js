@@ -13,7 +13,7 @@
 
 'use strict';
 
-var spawn = require('child_process').spawn;
+var spawn = require('spawn-cmd').spawn;
 var request = require('request');
 
 // Send a request to the given url and test that the response body has the
@@ -45,7 +45,6 @@ exports.testInstallation = function testInstallation (config, done) {
   // Keep track off whether "done" has been called yet
   var calledDone = false;
 
-  var spawn = require('spawn-cmd').spawn;
   var proc = spawn('npm', ['install']
     , {    cwd: config.path  }
     );
