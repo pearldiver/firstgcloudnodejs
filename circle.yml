@@ -1,5 +1,6 @@
 
 test:
   override:
+    - export GCLOUD_PROJECT=myfirstnodeproj
     - mocha 1-hello-world/test/index.js -t 30000
     - mocha 2-structured-data/test/index.js -t 30000
