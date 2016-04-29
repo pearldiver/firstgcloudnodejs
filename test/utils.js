@@ -14,6 +14,7 @@
 'use strict';
 
 var spawn = require('spawn-cmd').spawn;
+
 var request = require('request');
 
 // Send a request to the given url and test that the response body has the
