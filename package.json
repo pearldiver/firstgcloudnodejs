@@ -5,7 +5,7 @@
   "repository": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
   "private": true,
   "scripts": {
-    "postinstall": "find ./2-structured-data/* -name package.json -maxdepth 1 -execdir npm install  \\;",
+    "postinstall": "cd 2-structured-data && npm install",
     "lint": "semistandard \"**/*.js\"",
     "mocha": "mocha test/index.js -t 30000",
     "cover": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- test/index.js -t 30000",
