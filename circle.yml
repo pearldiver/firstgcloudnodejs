@@ -1,7 +1,7 @@
 
 general:
   build_dir: 1-hello-world
-  
+
 machine:
   node:
     version: 5.0.0
@@ -14,4 +14,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - gcloud -q preview app deploy app.yaml --promote --version=staging 
+      - GCLOUD_PROJECT="myfirstnodeproj" && gcloud -q preview app deploy app.yaml --promote --version=staging 
