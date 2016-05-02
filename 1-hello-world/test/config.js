@@ -21,5 +21,5 @@ module.exports = {
   //path: '..//',
   cmd: 'node',
   args: ['app.js'],
-  msg: 'Hello, world!'
+  msg: 'Hello, world! Deployed by circleci.'
 };
