@@ -1,4 +1,8 @@
 
+machine:
+  node:
+    version: 5.0.0
+    
 test:
   override:    
     - mocha 1-hello-world/test/index.js -t 30000
