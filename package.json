@@ -61,6 +61,7 @@
     "codecov": "^1.0.1",
     "istanbul": "^0.4.3",
     "mocha": "^2.4.5",
+    "mocha-circleci-reporter": "*",
     "nodejs-repo-tools": "git+https://github.com/GoogleCloudPlatform/nodejs-repo-tools.git#21daa823090c43fb667157c8b5b0c3b7f45a8357",
     "proxyquire": "^1.7.4",
     "request": "^2.69.0",
