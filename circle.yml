@@ -9,9 +9,7 @@ test:
 deployment:
   staging:
     branch: master
-    commands:
-      - echo $CLIENT_SECRET
-      - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json
-      - gcloud --quiet components update
+    commands:      
+      - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json      
       - gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
       - cd 1-hello-world && gcloud config set project "myfirstnodeproj" && gcloud preview app deploy
