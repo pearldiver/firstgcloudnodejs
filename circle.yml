@@ -10,4 +10,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - cd 1-hello-world && GCLOUD_PROJECT="myfirstnodeproj" && gcloud -q preview app deploy app.yaml --promote --version=staging 
+      - cd 1-hello-world && gcloud config set project "myfirstnodeproj" && gcloud -q preview app deploy app.yaml --promote --version=staging 
