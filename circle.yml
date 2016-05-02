@@ -1,17 +1,13 @@
-
-general:
-  build_dir: 1-hello-world
-
 machine:
   node:
     version: 5.0.0
     
 test:
   override:    
-    - mocha test/index.js -t 30000
+    - mocha 1-hello-world/test/index.js -t 30000
 
 deployment:
   staging:
     branch: master
     commands:
-      - GCLOUD_PROJECT="myfirstnodeproj" && gcloud -q preview app deploy app.yaml --promote --version=staging 
+      - cd 1-hello-world && GCLOUD_PROJECT="myfirstnodeproj" && gcloud -q preview app deploy app.yaml --promote --version=staging 
